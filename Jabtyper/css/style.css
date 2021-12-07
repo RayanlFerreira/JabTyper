@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    height: 100vh;
+}
+
+body{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    background-color: #4c9195;
+    color: white;
+}
+
+h1{
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E09289;
+}
+
+#nome{
+    margin-bottom: 5px;
+    margin-top: 60px;
+    height: 30px;
+    width: 180px;
+    text-align: center;
+}
+
+#botao-reiniciar{
+    width: 60px;
+    background-color: #E09289;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: auto;
+    margin-top: -36px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+li{
+    background-color: #E09289;
+    list-style: none; 
+    padding: 5px 10px;
+    display: flex;
+    vertical-align: middle;
+}
+
+h2{
+    margin-top: 40px;
+}
+
+table *{
+    border: none;
+    background-color: #E09289;
+}
+
+table{
+    border: none;
+    background-color: #E09289;
+}
+
+button:hover{
+    background-color: #4c9195;
+}
+
+hr{
+    border: solid;
+    border-color: white;
+}

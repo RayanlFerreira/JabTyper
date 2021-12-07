@@ -1,38 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UFT-8">
     <title>JabTyper</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <h1>JabTyper</h1>
 
+    <p class="frase">Bem vindo ao JabTyper, como vai vc ?</p>
+
     <input type="text" placeholder="nome do jogador" id="nome">
+    <textarea id="campo-digitacao" cols="60" rows="7"></textarea>
+    <button id="botao-reiniciar">Reset</button>
 
-    <p class="frase">Primeira frase</p>
-    <ul class="informacoes">
-        <li><span id="tamanho-frase"></span> palavras</li>
-        <li><span id="tempo">15</span> segundos</li>
-    </ul>
-
-    <button id="botao-reiniciar">Reset</button><br>
-
-    <textarea id="campo-digitacao" cols="60" rows="10"></textarea>
     <ul>
-        <li><span id="caracteres-digitados">0</span> caracteres</li>
-        <li><span id="palavras-digitadas">0</span> palavras</li>
+        <li><img src="img/caractere.png" alt=""><span id="caracteres-digitados">.0</span> caracteres</li>
+        <li><img src="img/escrita.png" alt=""><span id="palavras-digitadas">0</span> palavras</li>
+        <li><img src="img/tempo.png" alt=""><span id="tempo">15</span> segundos</li>
     </ul>
 
-    <br>
     <h2>Placar</h2>
-    <table id="tabela-resultado" border="1">
+    <table id="tabela-resultado">
         <thead>
             <th>Usuário</th>
             <th>N° de palavras</th>
         </thead>
     </table>
+    <hr>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>

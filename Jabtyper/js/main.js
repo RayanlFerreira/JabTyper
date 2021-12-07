@@ -1,11 +1,4 @@
-//pegando o texto de frase e contando o seu numero de palavras
-var frase = $(".frase").text();
-var numPalavras = frase.split(" ").length;
-console.log(numPalavras);
 
-//modificando o elemento para dizer o numero de palavras
-var tamanhoFrase = $("#tamanho-frase");
-tamanhoFrase.text(numPalavras);
 
 //Pegando e informando o numero de caracteres digitados
 var campo = $("#campo-digitacao");
@@ -32,7 +25,7 @@ campo.on("focus", function(){
         nome = $("#nome").val()
         PalavrasDigitadas = $("#palavras-digitadas").text()
         pontuação = PalavrasDigitadas/tempoInicial * 60
-        $("#tabela-resultado").append("<tr><td>"+nome+"</td><td>"+pontuação+"</td></tr>")
+        $("#tabela-resultado").append("<tr><td>"+nome+"</td><td>"+pontuação+"</td><td><button onclick='deletar((this.parentNode.parentNode.rowIndex))'><img src='img/lixeira.png'></button></td></tr>")
     }else{
         tempoRestante--;
         tempoJogo.text(tempoRestante);
@@ -40,6 +33,9 @@ campo.on("focus", function(){
 }, 1000);
 });
 
+function deletar(i){
+    document.getElementById('tabela-resultado').deleteRow(i)
+}
 
 $("#botao-reiniciar").on("click", function(){
     campo.attr("disabled", false);
@@ -47,4 +43,4 @@ $("#botao-reiniciar").on("click", function(){
     $("#caracteres-digitados").text("0");
     $("#palavras-digitadas").text("0");
     $("#tempo").text(tempoInicial);
-    });
+});
