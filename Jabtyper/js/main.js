@@ -44,3 +44,10 @@ $("#botao-reiniciar").on("click", function(){
     $("#palavras-digitadas").text("0");
     $("#tempo").text(tempoInicial);
 });
+
+var aleatorio = ['Cada vez que você faz uma opção está transformando sua essência em alguma coisa um pouco diferente do que era antes.' , 'Você pode encontrar as coisas que perdeu, mas nunca as que abandonou.' , 
+    'Chorar por uma pessoa que esta morta não é tão triste quanto chorar por uma uma pessoa que ainda vive mas que a perdemos para sempre.' , 'Numa toca no chão vivia um hobbit' , 
+    'Que haja uma luz nos lugares mais escuros, quando todas as outras luzes se apagarem.'] ;
+    var aleatoriorandom = aleatorio[Math.floor(Math.random() * aleatorio.length )];
+    document.querySelector('.frase').innerHTML = aleatoriorandom;
+
